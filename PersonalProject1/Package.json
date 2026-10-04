@@ -1,0 +1,12 @@
+{
+  "name": "spinlog",
+  "version": "1.0.0",
+  "description": "Album tracker that will use the Spotify API",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

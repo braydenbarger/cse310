@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spinlog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Spinlog</h1>
+    <p>Keep track of albums you've heard and find new ones.</p>
+    <button id="connect-btn">Connect Spotify</button>
+    <span id="connect-status">The JavaScript did not load. Run npm install and npm run build to make main.js.</span>
+  </header>
+
+  <section id="stats"></section>
+
+  <section id="search-section">
+    <label for="search-box">Add an album (type, pick one from the list, then press Enter)</label>
+    <div id="search-wrapper" class="search-wrapper">
+      <input id="search-box" type="text" placeholder="Album or artist" autocomplete="off">
+      <ul id="suggestions" class="suggestions" hidden></ul>
+    </div>
+    <p id="search-message" class="small-text"></p>
+    <div id="rating-box" hidden></div>
+    <button id="recommend-btn">Recommend album</button>
+  </section>
+
+  <!-- Recommended album -->
+  <section id="similar-box"></section>
+
+  <section>
+    <h2>My Library</h2>
+    <div id="library" class="grid"></div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
