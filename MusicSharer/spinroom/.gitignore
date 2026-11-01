@@ -1,0 +1,4 @@
+_build/
+*.jsonl
+rebar3.crashdump
+erl_crash.dump

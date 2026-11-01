@@ -1,0 +1,13 @@
+{application, spinroom, [
+    {description, "SpinRoom - shared listening rooms with a queue, ratings, reactions and skip votes"},
+    {vsn, "0.1.0"},
+    {registered, [spinroom_sup, spinroom_room_sup, spinroom_log]},
+    {mod, {spinroom_app, []}},
+    {applications, [kernel, stdlib, inets]},
+    {env, [
+        {port, 8080},
+        {history_file, "spinroom_history.jsonl"}
+    ]},
+    {modules, []},
+    {licenses, ["MIT"]}
+]}.
