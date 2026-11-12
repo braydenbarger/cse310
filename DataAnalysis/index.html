@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brayden's Listening Stats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Brayden's Listening Stats</h1>
+    </header>
+
+    <section class="hero" aria-live="polite">
+      <p class="hero-text" id="hero-artist"></p>
+      <p class="hero-text" id="hero-album"></p>
+    </section>
+
+    <section class="tiles" id="tiles" aria-label="Summary"></section>
+
+    <div class="rankings">
+      <section class="card">
+        <h2>Top artists</h2>
+        <ol class="ranked" id="artists"></ol>
+      </section>
+      <section class="card">
+        <h2>Top albums</h2>
+        <ol class="ranked" id="albums"></ol>
+      </section>
+      <section class="card">
+        <h2>Top songs</h2>
+        <ol class="ranked" id="songs"></ol>
+      </section>
+      <section class="card">
+        <h2>Top genres</h2>
+        <ol class="ranked" id="genres"></ol>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Hours listened per day</h2>
+      <div class="panels" id="daily"></div>
+      <p class="note" id="daily-note"></p>
+      <details>
+        <summary>View as table</summary>
+        <div class="table-wrap" id="daily-table"></div>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>When the music plays</h2>
+      <p class="note" id="heat-peak"></p>
+      <div class="heat" id="heat"></div>
+      <div class="heat-legend" id="heat-legend"></div>
+      <details>
+        <summary>View as table</summary>
+        <div class="table-wrap" id="heat-table"></div>
+      </details>
+    </section>
+
+  </main>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+
+  <script src="stats.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
